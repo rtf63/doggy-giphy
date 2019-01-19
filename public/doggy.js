@@ -1,5 +1,5 @@
 const apiAddr = 'http://api.giphy.com/v1/gifs/random?';
-const giphyAPIkey = 'api_key=yMQCDS0vaIPTEenxO70BsynGp0CKUSZ9';
+const giphyAPIkey = process.env.KEY;
 const tag = '&tag=puppy';
 const rating = '&rating=R';
 const xhr = '';
@@ -17,7 +17,7 @@ window.onload = function() {
       var apiJSON = $.getJSON(emptySearchURL);
     }
     else {
-      const searchURL = apiAddr + giphyAPIkey + tag + '+' + search + rating;
+      const searchURL = apiAddr + giphyAPIkey + tag + "+" + search + rating;
       // https://api.giphy.com/v1/gifs/random?api_key=yMQCDS0vaIPTEenxO70BsynGp0CKUSZ9&tag=puppy+happy&rating=R
 
       var apiJSON = $.getJSON(searchURL);
