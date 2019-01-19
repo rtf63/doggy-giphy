@@ -1,0 +1,57 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Daily Dog!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  
+  
+  <body>
+    <header>
+      <h1>Daily Dog!</h1>
+    </header>
+
+    <main>
+      <p>oh hi,</p>
+      <p>do you love dogs? Tell me how you feel today.</p>
+      
+      <form>
+        <input name="feeling" type="text" maxlength="100" placeholder="I'm feeling..." aria-labelledby="submit-feeling">
+        <button type="submit" id="submit-feeling">Submit Feeling</button>
+      </form>
+      
+      <div id="gif-box">
+      </div>
+    </main>
+
+    <footer>
+      Made with <a href="https://glitch.com">Glitch</a>,
+      <img src="https://cdn.glitch.com/7156bf7c-74c8-490d-bc40-bb0c5ec41088%2FPoweredBy_200px-White_HorizText.png?1547874248427" height="15" width="130">
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
